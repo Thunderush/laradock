@@ -121,6 +121,8 @@ RUN if [ ${COMPOSER_GLOBAL_INSTALL} = true ]; then \
     composer global install \
 ;fi
 
+RUN composer config -g repo.packagist composer https://packagist.phpcomposer.com
+
 #####################################
 # Drush:
 #####################################
